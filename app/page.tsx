@@ -1,7 +1,3 @@
 export default function Home() {
-  return (
-    <>
-      <div>Body</div>
-    </>
-  );
+  return <section className="padding-x">home</section>;
 }

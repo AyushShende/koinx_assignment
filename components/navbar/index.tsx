@@ -6,10 +6,10 @@ export default function Navbar() {
   return (
     <nav className="padding-x py-4 flex justify-between items-center bg-white">
       <Logo />
-      <div className="hidden sm:block">
+      <div className="hidden md:block">
         <Menu />
       </div>
-      <div className="sm:hidden">
+      <div className="md:hidden">
         <MobileNavigation />
       </div>
     </nav>

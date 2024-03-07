@@ -11,6 +11,7 @@
 @layer base {
   body {
     @apply bg-slate-200;
+    @apply text-slate-600;
   }
 }
 
@@ -18,10 +19,13 @@
   @apply mx-auto max-w-[1440px] min-w-[350px];
 }
 
-.flex-center {
-  @apply flex items-center justify-center;
+.flex-item-center {
+  @apply flex items-center;
 }
 
 .padding-x {
   @apply px-4 md:px-10;
+}
+.title {
+  @apply font-semibold text-slate-800;
 }
