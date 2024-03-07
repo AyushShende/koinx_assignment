@@ -21,7 +21,7 @@ export default function CoinView({
         </div>
         <CoinPrice inr={inr} usd={usd} usdChange={usdChange} />
         <hr className="my-8" />
-        <CoinChart symbol={symbol} />
+        <CoinChart />
       </div>
     </>
   );
