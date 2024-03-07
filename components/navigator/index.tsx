@@ -5,7 +5,7 @@ export default function Navigator() {
         <li className="text-blue-700 font-medium whitespace-nowrap border-b-2 border-blue-700 pb-2">
           Overview
         </li>
-        <li className="text-slate-700 font-medium whitespace-nowrap ">
+        <li className="text-slate-700 font-medium whitespace-nowrap">
           Fundamentals
         </li>
         <li className="text-slate-700 font-medium whitespace-nowrap">
