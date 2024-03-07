@@ -1,3 +1,5 @@
+import { TrendingCoinsResponse } from '@/types';
+
 type CurrencyInfo = {
   symbol: string;
   image: {
@@ -38,5 +40,19 @@ export const fetchInfoData = async (id: string) => {
   } catch (error) {
     console.log(error);
     throw new Error('Could not fetch currency info');
+  }
+};
+
+export const fetchTrendingCoins = async () => {
+  try {
+    const trendingCoinsData = await fetch(
+      `https://api.coingecko.com/api/v3/search/trending`
+    );
+
+    const trendingCoins: TrendingCoinsResponse = await trendingCoinsData.json();
+    return trendingCoins.coins;
+  } catch (error) {
+    console.log(error);
+    throw new Error('Could not fetch trending coins');
   }
 };

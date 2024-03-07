@@ -9,3 +9,21 @@ export type CoinPriceData = {
   usd: number;
   usdChange: number;
 };
+
+export type TrendingCoinsResponse = {
+  coins: [
+    {
+      item: {
+        symbol: string;
+        small: string;
+        data: {
+          price: string;
+          price_change_percentage_24h: {
+            usd: number;
+          };
+          sparkline: string;
+        };
+      };
+    }
+  ];
+};
