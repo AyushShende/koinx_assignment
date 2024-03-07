@@ -5,6 +5,7 @@ import Navigator from '@/components/navigator';
 import Overview from '@/components/overview';
 import PromoWidget from '@/components/promoWidget';
 import Sentiment from '@/components/sentiment';
+import Tokenomics from '@/components/tokenomics';
 import TrendingWidget from '@/components/trendingWidget';
 import { fetchCurrencyData, fetchInfoData } from '@/queries/currencyData';
 
@@ -41,6 +42,7 @@ export default async function CurrencyPage({
           <Overview />
           <Sentiment />
           <About />
+          <Tokenomics />
         </div>
 
         <div>
