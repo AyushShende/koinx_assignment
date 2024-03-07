@@ -15,7 +15,7 @@ export default function CoinView({
 }: CoinViewProps) {
   return (
     <>
-      <div className="bg-white rounded-lg border border-gray-300 px-5 py-6">
+      <div className="bg-white rounded-lg border border-gray-300 px-6 py-8">
         <div className="hidden md:mb-6 md:block">
           <CoinName imgUrl={imgUrl} name={name} symbol={symbol} />
         </div>

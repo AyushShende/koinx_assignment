@@ -24,7 +24,6 @@ export const fetchCurrencyData = async (id: string) => {
     return priceData[id];
   } catch (error) {
     console.log(error);
-
     throw new Error('Could not fetch currency data');
   }
 };
@@ -38,7 +37,6 @@ export const fetchInfoData = async (id: string) => {
     return { symbol: info.symbol, imgUrl: info.image.small };
   } catch (error) {
     console.log(error);
-
     throw new Error('Could not fetch currency info');
   }
 };

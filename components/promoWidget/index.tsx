@@ -1,3 +1,3 @@
 export default function PromoWidget() {
-  return <div>PromoWidget</div>;
+  return <div>promo widget</div>;
 }

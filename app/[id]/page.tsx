@@ -1,5 +1,7 @@
 import CoinView from '@/components/coinView';
 import CurrentCurrencyIndicator from '@/components/currentCurrencyIndicator';
+import Navigator from '@/components/navigator';
+import Overview from '@/components/overview';
 import PromoWidget from '@/components/promoWidget';
 import TrendingWidget from '@/components/trendingWidget';
 import { fetchCurrencyData, fetchInfoData } from '@/queries/currencyData';
@@ -23,8 +25,8 @@ export default async function CurrencyPage({
         imgUrl={infoData.imgUrl}
         symbol={infoData.symbol}
       />
-      <div className="grid md:grid-cols-4 gap-4">
-        <div className="md:col-span-3">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="md:col-span-3 space-y-6">
           <CoinView
             inr={priceData.inr}
             usd={priceData.usd}
@@ -33,6 +35,8 @@ export default async function CurrencyPage({
             imgUrl={infoData.imgUrl}
             symbol={infoData.symbol}
           />
+          <Navigator />
+          <Overview />
         </div>
 
         <div>
