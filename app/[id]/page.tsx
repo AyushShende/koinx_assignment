@@ -24,27 +24,27 @@ type CurrencyPageParams = {
 export default async function CurrencyPage({
   params: { id },
 }: CurrencyPageParams) {
-  // const priceData = await fetchCurrencyData(id);
-  // const infoData = await fetchInfoData(id);
+  const priceData = await fetchCurrencyData(id);
+  const infoData = await fetchInfoData(id);
   const trendingCoins = await fetchTrendingCoins();
 
   return (
     <section className="padding-x overflow-hidden">
-      {/* <CurrentCurrencyIndicator
+      <CurrentCurrencyIndicator
         name={id}
         imgUrl={infoData.imgUrl}
         symbol={infoData.symbol}
-      /> */}
+      />
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div className="order-1 md:col-span-3 space-y-6">
-          {/* <CoinView
+          <CoinView
             inr={priceData.inr}
             usd={priceData.usd}
             usdChange={priceData.usd_24h_change}
             name={id}
             imgUrl={infoData.imgUrl}
             symbol={infoData.symbol}
-          /> */}
+          />
           <Navigator />
           <Overview />
           <Sentiment />
@@ -53,9 +53,9 @@ export default async function CurrencyPage({
           <Team />
         </div>
 
-        <div className="order-3 md:order-2">
+        <div className="order-3 md:order-2 space-y-4">
           <PromoWidget />
-          <TrendingWidget />
+          <TrendingWidget coins={trendingCoins} />
         </div>
 
         <div className="md:col-span-4 order-2 md:order-3">

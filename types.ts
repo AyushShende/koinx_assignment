@@ -14,6 +14,7 @@ export type TrendingCoinsResponse = {
   coins: [
     {
       item: {
+        name: string;
         symbol: string;
         small: string;
         data: {

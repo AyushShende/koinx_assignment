@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef, memo, RefObject } from 'react';
 
-function CoinChart() {
+function CoinChart({ symbol }: { symbol?: string }) {
   const container: RefObject<HTMLDivElement> = useRef(null);
 
   useEffect(() => {

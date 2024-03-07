@@ -17,7 +17,7 @@ export default function CoinCard({
   imgUrl,
 }: CoinDataProps) {
   return (
-    <div className="space-y-2 border min-w-[200px] max-w-[250px] border-slate-300 rounded-lg p-3">
+    <div className="space-y-2 border min-w-[200px] max-w-[300px] border-slate-300 rounded-lg p-3">
       <div className="flex-item-center gap-1">
         <Image
           className="rounded-full"
